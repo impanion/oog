@@ -1,0 +1,158 @@
+/* Global 8-bit style font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+/* Body styling - dark blue background */
+body {
+  background-color: #001a33; /* Dark blue */
+  color: #fff;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Header Section */
+.header {
+  background-color: #00264d; /* Slightly lighter dark blue */
+  color: #ccffcc; /* Pastel green */
+  text-shadow: 2px 2px #003366; /* Deep blue shadow */
+  padding: 2rem 1rem;
+  border-bottom: 4px solid #ccffcc; /* Pastel green highlight */
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  font-size: 1rem;
+  text-shadow: 2px 2px #003366; /* Deep blue shadow */
+}
+
+/* Main Content Layout */
+.zen-main {
+  display: flex;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+/* Left Image Section */
+.zen-image {
+  flex: 1;
+  max-width: 500px; /* Controls image scaling */
+  text-align: center;
+}
+
+.senpai-image {
+  max-width: 100%;
+  height: auto;
+  border: 4px solid #ccffcc; /* Pastel green highlight */
+  image-rendering: pixelated; /* 8-bit pixelated effect */
+  margin-bottom: 1rem;
+}
+
+.quote {
+  font-size: 0.9rem;
+  color: #ccffcc; /* Pastel green */
+  text-shadow: 1px 1px #003366; /* Subtle shadow */
+  padding: 0 1rem;
+}
+
+.quote-author {
+  font-size: 0.85rem;
+  color: #cce6cc; /* Slightly lighter pastel green */
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* Roadmap Section */
+.zen-roadmap {
+  flex: 2;
+  max-width: 600px;
+  text-align: left;
+  color: #ccffcc;
+}
+
+.zen-roadmap h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px #006633; /* Dark green shadow */
+}
+
+.roadmap-block {
+  background-color: #003366; /* Slightly lighter dark blue */
+  padding: 1rem;
+  border: 2px solid #ccffcc; /* Green highlight */
+  margin-bottom: 1rem;
+  border-radius: 0; /* Sharp corners for 8-bit aesthetic */
+}
+
+.roadmap-block h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px #001a33; /* Deeper blue shadow */
+  color: #ccffcc;
+}
+
+.roadmap-block ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+}
+
+.roadmap-block ul li {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: #cce6cc; /* Softer pastel green */
+}
+
+/* Buttons Section */
+.buttons-section {
+  display: flex;
+  flex-direction: row; /* Horizontal button alignment */
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem auto; /* Center the buttons below the roadmap */
+  width: 100%; /* Take up the full width */
+}
+
+.community-button,
+.buy-button {
+  display: inline-block;
+  background-color: #ccffcc; /* Pastel green */
+  color: #001a33; /* Dark blue text */
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  text-decoration: none;
+  border: 4px solid #003366; /* Deep blue border */
+  text-shadow: 1px 1px #003366; /* Deep blue shadow */
+  box-shadow: 3px 3px #003366; /* Button shadow effect */
+  border-radius: 0; /* Sharp corners */
+  transition: transform 0.2s;
+}
+
+.community-button:hover,
+.buy-button:hover {
+  background-color: #b3e6b3; /* Lighter pastel green on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 4px 4px #00264d; /* Shadow adjustment on hover */
+}
+
+/* Footer */
+.footer {
+  background-color: #00264d; /* Slightly lighter dark blue */
+  padding: 1rem;
+  border-top: 4px solid #ccffcc;
+  color: #ccffcc;
+}
+
+.footer p {
+  font-size: 0.8rem;
+  text-shadow: 1px 1px #003366; /* Subtle shadow */
+}
