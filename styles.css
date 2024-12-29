@@ -112,18 +112,34 @@ body {
   color: #cce6cc; /* Softer pastel green */
 }
 
+/* Contract Address Section */
+.contract-address {
+  margin: 2rem auto;
+  text-align: center;
+  color: #ccffcc;
+  font-size: 0.9rem;
+}
+
+.contract-address .address {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #cce6cc; /* Slightly lighter pastel green */
+  text-shadow: 1px 1px #003366; /* Subtle shadow for emphasis */
+}
+
 /* Buttons Section */
 .buttons-section {
   display: flex;
   flex-direction: row; /* Horizontal button alignment */
   justify-content: center;
   gap: 2rem;
-  margin: 2rem auto; /* Center the buttons below the roadmap */
+  margin: 2rem auto; /* Center the buttons */
   width: 100%; /* Take up the full width */
 }
 
 .community-button,
-.buy-button {
+.buy-button,
+.dex-button {
   display: inline-block;
   background-color: #ccffcc; /* Pastel green */
   color: #001a33; /* Dark blue text */
@@ -138,7 +154,8 @@ body {
 }
 
 .community-button:hover,
-.buy-button:hover {
+.buy-button:hover,
+.dex-button:hover {
   background-color: #b3e6b3; /* Lighter pastel green on hover */
   transform: translateY(-2px); /* Slight lift effect */
   box-shadow: 4px 4px #00264d; /* Shadow adjustment on hover */
